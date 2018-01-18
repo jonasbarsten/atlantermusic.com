@@ -1,0 +1,164 @@
+@font-face {
+	font-family: CircularPro;
+	src: url("../fonts/CircularPro-Black.otf") format("opentype");
+}
+
+html, #video-wrapper {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: url("../img/bg-desktop.jpg") no-repeat center center fixed;
+	-webkit-background-size': cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover
+}
+
+h1 {
+	font-family: 'CircularPro', sans-serif;
+	color: #000DFE;
+	line-height: 1.1em;
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	padding: 0px;
+}
+
+a:hover {
+	color: #000DFE;
+}
+
+.navbar-header {
+	padding: 15px;
+}
+
+.navbar-header a {
+	font-family: 'CircularPro', sans-serif;
+	color: #000DFE;
+	text-decoration: underline;
+	
+}
+
+/*#menu-button {
+	margin: 25px 25px 0px 0px;
+}*/
+
+.navbar-brand {
+	padding: 0;
+}
+
+#navbar-hamburger img {
+	height: 17px;
+}
+
+#navbar-close img {
+	height: 25px;
+}
+
+.section, #menu {
+	text-align: center;
+}
+
+.section ul, #menu ul {
+	list-style: none;
+}
+
+#menu {
+	margin-top: 200px;
+}
+
+.section {
+	height: 100%;
+	margin-top: 150px;
+}
+
+.video-section {
+	margin-top: 0px;
+}
+
+.fullscreen-background {
+	margin: 0px;
+	padding-top: 75px;
+	background-color: #000DFE;
+}
+
+.fullscreen-background h1 {
+	color: white;
+}
+
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.offset-15 {
+	height: 15%;
+}
+
+.desktop-only {
+	display: inline;
+}
+
+.mobile-only {
+	display: none;
+}
+
+
+@media (max-width: 600px) {
+
+	body {
+		background: url("../img/bg-mobile.jpg") no-repeat center center fixed;
+		-webkit-background-size': cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover
+	}
+
+	h1 {
+		font-size: 38px;
+	}
+
+	.list-odd {
+		color: #FFF111;
+	}
+
+	#navbar-hamburger img {
+	height: 15px;
+	}
+
+	#navbar-close img {
+		height: 25px;
+	}
+
+	.mobile-only {
+		display: inline;
+	}
+
+	.desktop-only {
+		display: none;
+	}
+
+/*	.mobile-rotate {
+		height: 100%;
+		-ms-transform: rotate(90deg);
+	    -webkit-transform: rotate(90deg);
+	    transform: rotate(90deg);
+	}*/
+}
+
+@media (min-width: 200px) {
+	.navbar-header {
+		float: none;
+	}
+
+}
